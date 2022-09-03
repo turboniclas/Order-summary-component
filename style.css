@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --clr-primary-pale-blue: #e0e8ff;
+    --clr-primary-bright-blue: #3829e0;
+    --clr-very-pale-blue: #f5f7ff;
+    --clr-desaturated-blue: #7280a7;
+    --clr-dark-blue: #1f2f56;
+    --ff-primary: 'Red Hat Display', sans-serif;
+}
+body{
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    background-color: var(--clr-primary-pale-blue);
+    background-image:url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+p{
+    color: var(--clr-desaturated-blue)
+}
+
+h2{
+    font-weight: 700;
+}
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+ 
+}
+
+.mainbox{
+    background-color:#fff;
+    width: 380px;
+    height: 590px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.img_musiker{
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    max-width: 100%; 
+	height: auto;
+}
+
+.box_text h1{
+    font-weight: 900;
+    font-size: 25px;
+    padding: 1rem 3rem 0 3rem;
+}
+
+.box_text p{
+    padding: 0 50px;
+    font-size: 15px;
+}
+
+.price{
+    background-color: var(--clr-very-pale-blue);
+    margin:1rem 2rem 1rem 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.price img{
+    width: 48px;
+    height: 48px;
+}
+
+.price p, h2, h4{
+    margin: 0.1rem;
+    font-size: 15px;
+}
+.price-start{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price_text{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.price_between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainbox a{
+    color: var(--clr-primary-bright-blue);
+}
+
+.mainbox a:hover{
+    color: #867cf3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button{
+    padding: 1rem;
+    background-color: var(--clr-primary-bright-blue);
+    color: #fff;
+    margin: 2rem 2rem 1.5rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 15px rgba(114, 128, 167, 0.25);
+}
+
+.button:hover{
+    background-color: rgba(56, 41, 244, 0.75);
+    cursor: pointer;
+}
+
+.cancel{
+    color: var(--clr-desaturated-blue);
+}
+.cancel:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 376px) {
+    body{
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+    }
+    
+    .mainbox{
+        width: 350px;
+        height: 575px;
+    }
+}
